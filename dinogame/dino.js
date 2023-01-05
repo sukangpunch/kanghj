@@ -48,7 +48,7 @@ function 프레임마다실행(){
   
   ctx.clearRect(0,0,canvas.width,canvas.height);
   
-  if(timer % 300 === 0){
+  if(timer % 200 === 0){
     var catus = new Catus();
     catuslist.push(catus);
   }
@@ -57,7 +57,7 @@ function 프레임마다실행(){
     if(a.x < 0){
         o.splice(i,1);
     }
-    a.x -=2;
+    a.x -=4;
     
     충돌(dino,a);
 
